@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание автобусов</title>
+    <!-- Подключение Bootstrap для стилей -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключение jQuery и jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Расписание автобусов</h2>
+
+        <!-- Поле для выбора региона -->
+        <div class="mb-3">
+            <label for="region" class="form-label">Выберите регион</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="region" placeholder="Введите регион">
+                <button class="btn btn-primary" id="confirm-region">Подтвердить</button>
+            </div>
+        </div>
+
+        <!-- Поле для выбора остановки -->
+        <div class="mb-3">
+            <label for="stop" class="form-label">Выберите остановку</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="stop" placeholder="Введите остановку">
+                <button class="btn btn-primary" id="confirm-stop">Подтвердить</button>
+            </div>
+        </div>
+
+        <!-- Контейнер для ближайшей остановки -->
+        <div id="nearest-stops" class="mb-3"></div>
+
+        <!-- Список автобусов -->
+        <ul id="bus-buttons" class="list-group mb-3"></ul>
+
+        <!-- Информация о времени прибытия -->
+        <div id="arrival-times" class="mb-3"></div>
+
+        <!-- Кнопка для очистки -->
+        <button class="btn btn-secondary w-100" id="clear-button">Очистить</button>
+    </div>
+
+    <!-- Подключение Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Подключение скрипта -->
+    <script src="script.js"></script>
+</body>
+
+</html>
